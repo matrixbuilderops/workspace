@@ -1,0 +1,210 @@
+{
+  "systems": [
+    {
+      "name": "Puget Workstation E211-XL",
+      "description": "High-end workstation with dual AMD EPYC 9965 CPUs and \n        NVIDIA RTX 6000 Blackwell Max-Q workstation GPU.\n        Optimized for professional workloads with ECC memory.",
+      "os": "Linux Ubuntu 24.04 LTS",
+      "ram_tb": 2.25,
+      "storage_tb": 109.44,
+      "cpus": [
+        {
+          "name": "AMD EPYC 9965",
+          "cores": 192,
+          "threads_per_core": 2,
+          "clock_ghz": 2.25,
+          "quantity": 2
+        }
+      ],
+      "gpus": [
+        {
+          "name": "NVIDIA RTX 6000 Blackwell Max-Q",
+          "cuda_cores": 18176,
+          "clock_ghz": 1.5,
+          "memory_gb": 96,
+          "tensor_cores": 568,
+          "quantity": 1
+        }
+      ],
+      "performance": {
+        "FP32": {
+          "cpu_flops": 55296000000000.0,
+          "gpu_flops": 54528000000000.0,
+          "total_flops": 109824000000000.0,
+          "tflops": 109.824,
+          "pflops": 0.109824
+        },
+        "FP16": {
+          "cpu_flops": 55296000000000.0,
+          "gpu_flops": 218112000000000.0,
+          "total_flops": 273408000000000.0,
+          "tflops": 273.408,
+          "pflops": 0.273408
+        },
+        "FP64": {
+          "cpu_flops": 55296000000000.0,
+          "gpu_flops": 27264000000000.0,
+          "total_flops": 82560000000000.0,
+          "tflops": 82.56,
+          "pflops": 0.08256
+        },
+        "FP8": {
+          "cpu_flops": 55296000000000.0,
+          "gpu_flops": 436224000000000.0,
+          "total_flops": 491520000000000.0,
+          "tflops": 491.52,
+          "pflops": 0.49152
+        }
+      }
+    },
+    {
+      "name": "NVIDIA DGX Station H100",
+      "description": "AI supercomputer for Windows/Linux desktop environments.\n        Features 4x H100 GPUs with NVLink interconnect.\n        Designed for enterprise AI development and training.",
+      "os": "Windows 11 Pro / Ubuntu 22.04 LTS",
+      "ram_tb": 2.0,
+      "storage_tb": 30.0,
+      "cpus": [
+        {
+          "name": "AMD EPYC 7763 (DGX Station Host)",
+          "cores": 64,
+          "threads_per_core": 2,
+          "clock_ghz": 2.45,
+          "quantity": 1
+        }
+      ],
+      "gpus": [
+        {
+          "name": "NVIDIA H100 SXM5",
+          "cuda_cores": 14592,
+          "clock_ghz": 1.98,
+          "memory_gb": 80,
+          "tensor_cores": 456,
+          "quantity": 4
+        }
+      ],
+      "performance": {
+        "FP32": {
+          "cpu_flops": 10035200000000.0,
+          "gpu_flops": 231137280000000.0,
+          "total_flops": 241172480000000.0,
+          "tflops": 241.17248,
+          "pflops": 0.24117248
+        },
+        "FP16": {
+          "cpu_flops": 10035200000000.0,
+          "gpu_flops": 3582627840000000.0,
+          "total_flops": 3592663040000000.0,
+          "tflops": 3592.66304,
+          "pflops": 3.59266304
+        },
+        "FP64": {
+          "cpu_flops": 10035200000000.0,
+          "gpu_flops": 115568640000000.0,
+          "total_flops": 125603840000000.0,
+          "tflops": 125.60384,
+          "pflops": 0.12560384
+        },
+        "FP8": {
+          "cpu_flops": 10035200000000.0,
+          "gpu_flops": 7165255680000000.0,
+          "total_flops": 7175290880000000.0,
+          "tflops": 7175.29088,
+          "pflops": 7.17529088
+        }
+      }
+    },
+    {
+      "name": "NVIDIA DGX Spark",
+      "description": "Personal AI supercomputer with Grace CPU and Blackwell GPU.\n        Compact form factor designed for individual developers.\n        Optimized for LLM development and AI inference.",
+      "os": "Ubuntu 24.04 LTS with DGX OS",
+      "ram_tb": 0.512,
+      "storage_tb": 8.0,
+      "cpus": [
+        {
+          "name": "NVIDIA Grace CPU Superchip",
+          "cores": 72,
+          "threads_per_core": 1,
+          "clock_ghz": 3.4,
+          "quantity": 1
+        }
+      ],
+      "gpus": [
+        {
+          "name": "NVIDIA Blackwell B200",
+          "cuda_cores": 20736,
+          "clock_ghz": 1.6,
+          "memory_gb": 188,
+          "tensor_cores": 648,
+          "quantity": 1
+        }
+      ],
+      "performance": {
+        "FP32": {
+          "cpu_flops": 3916799999999.9995,
+          "gpu_flops": 66355200000000.0,
+          "total_flops": 70272000000000.0,
+          "tflops": 70.272,
+          "pflops": 0.070272
+        },
+        "FP16": {
+          "cpu_flops": 3916799999999.9995,
+          "gpu_flops": 1327104000000000.0,
+          "total_flops": 1331020800000000.0,
+          "tflops": 1331.0208,
+          "pflops": 1.3310208
+        },
+        "FP64": {
+          "cpu_flops": 3916799999999.9995,
+          "gpu_flops": 33177600000000.0,
+          "total_flops": 37094400000000.0,
+          "tflops": 37.0944,
+          "pflops": 0.0370944
+        },
+        "FP8": {
+          "cpu_flops": 3916799999999.9995,
+          "gpu_flops": 2654208000000000.0,
+          "total_flops": 2658124800000000.0,
+          "tflops": 2658.1248,
+          "pflops": 2.6581248
+        }
+      }
+    }
+  ],
+  "comparison": {
+    "FP32": {
+      "all_systems": {
+        "Puget Workstation E211-XL": 109.824,
+        "NVIDIA DGX Station H100": 241.17248,
+        "NVIDIA DGX Spark": 70.272
+      },
+      "best_system": "NVIDIA DGX Station H100",
+      "best_tflops": 241.17248
+    },
+    "FP16": {
+      "all_systems": {
+        "Puget Workstation E211-XL": 273.408,
+        "NVIDIA DGX Station H100": 3592.66304,
+        "NVIDIA DGX Spark": 1331.0208
+      },
+      "best_system": "NVIDIA DGX Station H100",
+      "best_tflops": 3592.66304
+    },
+    "FP64": {
+      "all_systems": {
+        "Puget Workstation E211-XL": 82.56,
+        "NVIDIA DGX Station H100": 125.60384,
+        "NVIDIA DGX Spark": 37.0944
+      },
+      "best_system": "NVIDIA DGX Station H100",
+      "best_tflops": 125.60384
+    },
+    "FP8": {
+      "all_systems": {
+        "Puget Workstation E211-XL": 491.52,
+        "NVIDIA DGX Station H100": 7175.29088,
+        "NVIDIA DGX Spark": 2658.1248
+      },
+      "best_system": "NVIDIA DGX Station H100",
+      "best_tflops": 7175.29088
+    }
+  }
+}
