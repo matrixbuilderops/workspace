@@ -42,3 +42,4 @@ htmlcov/
 .mypy_cache/
 ```node_modules/
 .next/
+node_modules/
