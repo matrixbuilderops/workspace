@@ -14,3 +14,4 @@ __pycache__/
 .next/
 dist/
 build/
+node_modules/
