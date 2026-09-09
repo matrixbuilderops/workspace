@@ -1,0 +1,40 @@
+{
+  "architecture": [
+    {
+      "name": "Puget Workstation E211-XL",
+      "role": "Storage Anchor & General Compute",
+      "cpus": 1,
+      "gpus": 1,
+      "ram_gb": 2304,
+      "storage_tb": 109.44
+    },
+    {
+      "name": "DGX Spark",
+      "role": "Cluster Orchestrator & Resource Allocator",
+      "cpus": 1,
+      "gpus": 1,
+      "ram_gb": 512,
+      "storage_tb": 4.0
+    },
+    {
+      "name": "DGX Station H100",
+      "role": "AI Training Powerhouse",
+      "cpus": 1,
+      "gpus": 4,
+      "ram_gb": 512,
+      "storage_tb": 15.0
+    }
+  ],
+  "performance": {
+    "traditional_cluster_pflops_fp8": 52.408961024,
+    "nexus_os_cluster_pflops_fp8": 114.5617960815821,
+    "synergy_multiplier": 1.5301440000000002,
+    "improvement_percent": 118.59200000000003
+  },
+  "synergy_factors": {
+    "io_elimination": 1.15,
+    "memory_unification": 1.1,
+    "pipeline_perfect": 1.12,
+    "hardware_direct": 1.08
+  }
+}
