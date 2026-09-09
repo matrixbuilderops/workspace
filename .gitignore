@@ -5,3 +5,4 @@ Nothing should be ignored in this case, as only a Python source file (`nexus_os_
 dist/
 build/
 *.log
+node_modules/
