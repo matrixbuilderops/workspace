@@ -1,8 +1,44 @@
-Nothing should be ignored in this case, as only a Python source file (`nexus_os_corrected.py`) was added without any build artifacts, dependencies, or temporary files.
-
-(empty output)node_modules/
-.next/
+```gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.eggs/
+.egg-info/
 dist/
 build/
+*.egg-info/
+
+# Logs
 *.log
-node_modules/
+
+# Environment variables
+.env
+.env.local
+*.env.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+```node_modules/
+.next/
