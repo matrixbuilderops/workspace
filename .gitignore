@@ -1,6 +1,5 @@
-Nothing needs to be added to the .gitignore file since only a Python source file (nexus_os_calculator.py) was modified and no build artifacts, dependencies, or temporary files were included in the changes.node_modules/
+(empty)node_modules/
 .next/
 dist/
 build/
 *.log
-node_modules/
